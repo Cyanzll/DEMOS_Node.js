@@ -1,0 +1,3 @@
+exports.getMime = function(extname) {
+    
+}

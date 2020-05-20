@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>A Bite of CSS3</title>
+	<link rel="stylesheet" type="text/css" href="main.css"/>
+</head>
+<body>
+	<div class="header">
+		<h1 id="title" class="before">Good Days</h1>
+	</div>
+	<div id="con" class="body">
+		<div class="img1 tran"></div>
+		<div class="img2 tran"></div>
+		<div class="img3 tran"></div>
+		<div class="img4 tran"></div>
+		<div class="img5 tran"></div>
+		<div class="img2 tran"></div>
+		<div class="img4 tran"></div>
+		<div class="img1 tran"></div>
+		<div class="img5 tran"></div>
+		<div class="img3 tran"></div>
+	</div>
+	<div class="footer">
+		<p>
+			Using Flex <br/>
+			Designed by Cyan 2020
+		</p>
+	</div>
+	<script>
+		var title = document.getElementById("title");
+		var ele = document.getElementById("con");
+		var list = ele.getElementsByTagName("div");
+        window.onload = () => {
+			title.classList.add("dream");
+            for(let i=0;i<list.length;i++) {
+				list[i].classList.add("bg");
+            }
+        };
+	</script>
+</body>
+</html>
